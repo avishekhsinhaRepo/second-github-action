@@ -15,6 +15,7 @@ jobs:
       - name: Run the Test
         run: npm test
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name : Get the latest checkout
